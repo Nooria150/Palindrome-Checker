@@ -3,7 +3,7 @@ function isPalindrome(str) {
   return cleanedStr === cleanedStr.split('').reverse().join('');
 }
 
-document.getElementById('check-btn').addEventListener('click', function() {
+document.getElementById('check-btn').addEventListener('click', ()=> {
   const textInput = document.getElementById('text-input').value;
   const resultElement = document.getElementById('result');
 
