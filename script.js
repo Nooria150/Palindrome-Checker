@@ -8,7 +8,7 @@ document.getElementById('check-btn').addEventListener('click', () => {
   const resultElement = document.getElementById('result');
 
   if (!textInput) {
-    resultElement.textContent = 'Please input a value';
+    alert('Please input a value');
     return;
   }
 
