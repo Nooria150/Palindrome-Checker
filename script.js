@@ -3,12 +3,12 @@ function isPalindrome(str) {
   return cleanedStr === cleanedStr.split('').reverse().join('');
 }
 
-document.getElementById('check-btn').addEventListener('click', ()=> {
+document.getElementById('check-btn').addEventListener('click', () => {
   const textInput = document.getElementById('text-input').value;
   const resultElement = document.getElementById('result');
 
   if (!textInput) {
-    alert('Please input a value');
+    resultElement.textContent = 'Please input a value';
     return;
   }
 
